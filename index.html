@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Bridges: Alumni Engagement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+        }
+        .text-green-500-check {
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#E0E0E0]">
+
+    <!-- Troubleshooting Message -->
+    <div id="status-message" class="fixed top-0 left-0 right-0 p-2 text-center text-sm font-bold z-50 rounded-b-lg"></div>
+
+    <!-- Message Box for "Connect" button -->
+    <div id="connect-message-box" class="fixed top-4 left-1/2 -translate-x-1/2 bg-[#A855F7] text-white py-2 px-4 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-[100]">
+        <!-- Message will be dynamically inserted here -->
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 lg:p-12">
+        <!-- Hero Section -->
+        <section id="vision" class="w-full max-w-7xl mx-auto mb-16 md:mb-24">
+            <div class="flex flex-col-reverse lg:flex-row items-center lg:space-x-12">
+                <div class="w-full lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-[#A855F7] tracking-tight">
+                        Building Bridges: A Unified Digital Platform for Alumni Engagement
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-6">
+                        Revolutionize how our university manages and engages with its invaluable alumni network.
+                    </p>
+                    <button class="px-6 py-3 bg-[#A855F7] text-white font-semibold rounded-full hover:bg-[#9333ea] transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                        Learn More
+                    </button>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <img src="https://placehold.co/600x400/1e1e1e/d4d4d4?text=Alumni+Platform" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e1e1e/d4d4d4?text=Placeholder';" alt="Digital Alumni Platform on Web and Mobile" class="rounded-3xl shadow-2xl w-full h-auto">
+                    <div class="absolute inset-0 bg-[#A855F7] opacity-20 rounded-3xl"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Functionality Section -->
+        <section id="core-functionality" class="w-full max-w-7xl mx-auto mb-16 md:mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Core Functionality</h2>
+                <p class="text-md md:text-lg text-gray-400 max-w-3xl mx-auto">
+                    A robust system for centralized alumni data management, moving away from fragmented records.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Secure Storage -->
+                <div class="bg-[#1e1e1e] rounded-2xl shadow-xl p-6 transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-4xl text-[#A855F7] mb-4">
+                         <!-- SVG for a safe/lock icon -->
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole"><circle cx="12" cy="16" r="1"></circle><path d="M15 2H9a3 3 0 0 0-3 3v2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2V5a3 3 0 0 0-3-3Z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Secure Storage & Easy Retrieval</h3>
+                    <p class="text-gray-400">Robust security protocols protect sensitive information, with intuitive search functions for quick access.</p>
+                </div>
+                <!-- Card 2: Data Profiles -->
+                <div class="bg-[#1e1e1e] rounded-2xl shadow-xl p-6 transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-4xl text-[#A855F7] mb-4">
+                        <!-- SVG for a user icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Comprehensive Data Profiles</h3>
+                    <p class="text-gray-400">Each profile includes personal, academic, and professional details for a holistic view.</p>
+                </div>
+                <!-- Card 3: Admin Dashboards -->
+                <div class="bg-[#1e1e1e] rounded-2xl shadow-xl p-6 transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-4xl text-[#A855F7] mb-4">
+                        <!-- SVG for a line chart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-area-chart"><path d="M3 3v18h18"></path><path d="M7 12v5h12V7H7v5z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Admin Dashboards</h3>
+                    <p class="text-gray-400">Dedicated tools for administrators to manage records, generate reports, and analyze patterns.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engagement Features Section -->
+        <section id="engagement-features" class="w-full max-w-7xl mx-auto mb-16 md:mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Fostering Connection</h2>
+                <p class="text-md md:text-lg text-gray-400 max-w-3xl mx-auto">
+                    A vibrant hub for engagement, connecting alumni with each other and with current students.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1: Networking & Mentorship -->
+                <div class="flex flex-col items-center text-center bg-[#1e1e1e] p-6 rounded-2xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-5xl text-[#A855F7] mb-4">
+                        <!-- SVG for networking icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Networking & Mentorship</h3>
+                    <p class="text-gray-400">Facilitate connections for career growth and personalized guidance.</p>
+                </div>
+                <!-- Feature 2: Job Board -->
+                <div class="flex flex-col items-center text-center bg-[#1e1e1e] p-6 rounded-2xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-5xl text-[#A855F7] mb-4">
+                        <!-- SVG for a briefcase icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Job & Internship Board</h3>
+                    <p class="text-gray-400">A dedicated section for alumni to post and find career opportunities.</p>
+                </div>
+                <!-- Feature 3: Events & Reunions -->
+                <div class="flex flex-col items-center text-center bg-[#1e1e1e] p-6 rounded-2xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-5xl text-[#A855F7] mb-4">
+                         <!-- SVG for a calendar icon -->
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-plus"><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"></path><line x1="12" x2="12" y1="2" y2="6"></line><line x1="12" x2="12" y1="2" y2="6"></line><line x1="3" x2="21" y1="6" y2="6"></line><path d="M16 19h6"></path><path d="M19 16v6"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Events & Reunions</h3>
+                    <p class="text-gray-400">Seamless event notifications, easy registration, and a centralized calendar.</p>
+                </div>
+                <!-- Feature 4: Discussion Forums -->
+                <div class="flex flex-col items-center text-center bg-[#1e1e1e] p-6 rounded-2xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <div class="text-5xl text-[#A855F7] mb-4">
+                        <!-- SVG for a message circle icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20.941c-3.26-.64-6.4-3.13-6.4-5.941a5.952 5.952 0 0 1 5.941-5.941c.21 0 .42.016.626.047a.99.99 0 0 0 .973-.872c.11-.83.6-1.52.872-2.128a5.952 5.952 0 0 1 5.941-5.941c3.26.64 6.4 3.13 6.4 5.941a5.952 5.952 0 0 1-5.941 5.941c-.21 0-.42-.016-.626-.047a.99.99 0 0 0-.973.872c-.11.83-.6 1.52-.872 2.128a5.952 5.952 0 0 1-5.941 5.941c-.21 0-.42-.016-.626-.047a.99.99 0 0 0-.973-.872c-.11-.83-.6-1.52-.872-2.128a5.952 5.952 0 0 1-5.941-5.941Z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Discussion Forums</h3>
+                    <p class="text-gray-400">Community groups and forums to foster active discussions and knowledge sharing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: Alumni Profiles -->
+        <section id="alumni-profiles" class="w-full max-w-7xl mx-auto mb-16 md:mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Meet Our Alumni</h2>
+                <p class="text-md md:text-lg text-gray-400 max-w-3xl mx-auto">
+                    Browse profiles of our accomplished graduates and connect with them for mentorship, networking, and career insights.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Profile 1 -->
+                <div class="bg-[#1e1e1e] rounded-2xl shadow-xl p-6 text-center transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <img src="https://placehold.co/100x100/A855F7/ffffff?text=JD" alt="Profile of John Doe" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-white">Aniket jha</h3>
+                    <p class="text-sm text-gray-400">Class of 2005</p>
+                    <p class="text-sm font-semibold text-[#A855F7]">Marketing Manager</p>
+                    <p class="text-sm text-gray-300 mt-4">Aniket is a technology leader with a passion for building scalable web applications. He is happy to mentor students interested in software engineering and entrepreneurship.</p>
+                    <button onclick="showConnectMessage('Aniket jha')" class="px-6 py-2 bg-[#A855F7] text-white font-semibold rounded-full hover:bg-[#9333ea] transition duration-300 ease-in-out mt-6">
+                        Connect
+                    </button>
+                </div>
+                <!-- Profile 2 -->
+                <div class="bg-[#1e1e1e] rounded-2xl shadow-xl p-6 text-center transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <img src="https://placehold.co/100x100/A855F7/ffffff?text=JA" alt="Profile of Jane Adams" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-white">Anurag Tiwari</h3>
+                    <p class="text-sm text-gray-400">Class of 2018</p>
+                    <p class="text-sm font-semibold text-[#A855F7]">Senior Software Engineer</p>
+                    <p class="text-sm text-gray-300 mt-4">Anurag specializes in digital marketing and brand strategy. She offers valuable insights for students looking to start a career in the creative industry.</p>
+                    <button onclick="showConnectMessage('Anurag Tiwari')" class="px-6 py-2 bg-[#A855F7] text-white font-semibold rounded-full hover:bg-[#9333ea] transition duration-300 ease-in-out mt-6">
+                        Connect
+                    </button>
+                </div>
+                <!-- Profile 3 -->
+                <div class="bg-[#1e1e1e] rounded-2xl shadow-xl p-6 text-center transition duration-300 ease-in-out transform hover:scale-105 border border-[#2e2e2e]">
+                    <img src="https://placehold.co/100x100/A855F7/ffffff?text=MS" alt="Profile of Michael Scott" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-white">Bhavya Tripathi</h3>
+                    <p class="text-sm text-gray-400">Class of 2015</p>
+                    <p class="text-sm font-semibold text-[#A855F7]">Financial Analyst</p>
+                    <p class="text-sm text-gray-300 mt-4">With over a decade of experience in finance, Michael provides expertise in investment strategies and market analysis.</p>
+                    <button onclick="showConnectMessage('Bhavya Tipathi')" class="px-6 py-2 bg-[#A855F7] text-white font-semibold rounded-full hover:bg-[#9333ea] transition duration-300 ease-in-out mt-6">
+                        Connect
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full max-w-7xl mx-auto text-center py-8 border-t border-gray-700 mt-auto">
+            <p class="text-gray-500 text-sm">&copy; 2024 Building Bridges. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const statusMessage = document.getElementById('status-message');
+            // Create a temporary element to check if Tailwind CSS is loaded
+            const tempDiv = document.createElement('div');
+            tempDiv.className = 'text-green-500-check';
+            document.body.appendChild(tempDiv);
+            
+            const computedStyle = window.getComputedStyle(tempDiv);
+            const color = computedStyle.color;
+
+            // The specific color value for 'text-green-500' can vary.
+            // Check if it's not the default color.
+            if (color !== 'rgb(224, 224, 224)' && color !== 'rgb(255, 255, 255)') {
+                statusMessage.className = 'bg-green-500 text-white p-2 rounded-b-lg fixed top-0 left-0 right-0 text-center text-sm font-bold z-50';
+                statusMessage.textContent = 'CSS Loaded Successfully.';
+            } else {
+                statusMessage.className = 'bg-red-500 text-white p-2 rounded-b-lg fixed top-0 left-0 right-0 text-center text-sm font-bold z-50';
+                statusMessage.innerHTML = 'CSS Not Loaded. Please check your internet connection and try again.';
+            }
+
+            // Remove the temporary element
+            document.body.removeChild(tempDiv);
+
+             // Automatically remove the status message after a few seconds
+             setTimeout(() => {
+                if (statusMessage) {
+                    statusMessage.remove();
+                }
+            }, 5000);
+        });
+
+        // Function to show a message box when "Connect" is clicked
+        function showConnectMessage(name) {
+            const messageBox = document.getElementById('connect-message-box');
+            messageBox.textContent = `Connecting with ${name}...`;
+            messageBox.style.opacity = '1';
+            
+            setTimeout(() => {
+                messageBox.style.opacity = '0';
+            }, 3000); // Hide after 3 seconds
+        }
+    </script>
+</body>
+</html>
